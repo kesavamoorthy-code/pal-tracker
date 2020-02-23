@@ -16,8 +16,9 @@ jobs:
     - name: Build with Gradle
 #      run:  ./gradlew build
       run:
-        git update-index --chmod=+x gradlew
-        git commit
+        pwd
+        cd workspace/pal-tracker
+        chmod 777 gradlew
         ./gradlew build
     - name: Publish artifact
       uses: actions/upload-artifact@v1
