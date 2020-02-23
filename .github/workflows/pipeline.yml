@@ -15,8 +15,10 @@ jobs:
         java-version: 11
     - name: Build with Gradle
 #      run:  ./gradlew build
-      run:
+      run: |
         chmod 777 gradlew
+        pwd
+        ./gradlew build
 #        pwd
 #        cd workspace/pal-tracker
 #        chmod 777 gradlew
