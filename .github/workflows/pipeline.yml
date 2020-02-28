@@ -16,6 +16,8 @@ jobs:
     - name: Create test database
       run: |
         mysql -uroot -proot < databases/tracker/create_databases.sql
+        chmod 777 gradlew
+        pwd
         ./gradlew testMigrate
     - name: Build with Gradle
 #      run:  ./gradlew build
