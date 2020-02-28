@@ -36,6 +36,11 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 //        return timeEntries.get(id);
 //    }
 
+//    @Override
+//    public TimeEntry find(Long id) {
+//        return timeEntries.get(id);
+//    }
+
     @Override
     public List<TimeEntry> list() {
         return new ArrayList<>(timeEntries.values());

@@ -8,6 +8,8 @@ public interface TimeEntryRepository
 
     public TimeEntry find(long id);
 
+//    TimeEntry find(Long id);
+
     public List<TimeEntry> list();
 
     public TimeEntry update(Long id, TimeEntry timeEntry);
