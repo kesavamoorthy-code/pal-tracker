@@ -24,7 +24,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
 //    public JdbcTimeEntryRepository(JdbcTemplate jdbcTemplate) {
 //        this.jdbcTemplate = jdbcTemplate;
 //        this.jdbcTemplate = jdbcTemplate;
-//    }
+//     }
 
     @Override
     public TimeEntry create(TimeEntry timeEntry) {
